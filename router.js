@@ -4,7 +4,7 @@ router.route("/play")
   .get((req, res, next) => {
     res.status(418)
     res.setHeader("X-Title", "zorg");
-    res.send("no teapot");
+    res.send();
     next();
   })
   .post((req, res, next) => {
