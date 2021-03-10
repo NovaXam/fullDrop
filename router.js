@@ -3,7 +3,7 @@ const router = require("express").Router();
 router.route("/play")
   .get((req, res, next) => {
     res.status(418)
-    res.setHeader("x-title", "zorg");
+    res.setHeader("X-Title", "zorg");
     res.send();
     next();
   })
