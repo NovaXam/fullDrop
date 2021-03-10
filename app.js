@@ -5,6 +5,8 @@ const bodyParser = require("body-parser");
 
 const PORT = process.env.PORT || 3000;
 
+router.use(express.static(path.join(__dirname, "public")));
+
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 
